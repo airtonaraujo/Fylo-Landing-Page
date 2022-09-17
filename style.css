@@ -278,3 +278,139 @@ footer li {
     display: flex;
     flex-direction: row;
 }
+
+@media screen and (max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        width: 768px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav img {
+        width: 20%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-flex {
+        text-align: center;
+    }
+
+    .first-flex p{
+        margin: 2em;
+    }
+
+    .first-flex form {
+        margin: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first-flex input {
+        margin: 1em;
+        width: 80%;
+    }
+
+    .first-flex button {
+        width: 80%;
+    }
+
+    .second-section {
+        text-align: left;
+    }
+
+    .second-section h2 {
+        font-size: 1em;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .second-section p {
+        margin-bottom: 5%;
+    }
+
+    .second-section-text {
+        text-align: left;
+    }
+
+    .green-link {
+        margin-left: 30%;
+    }
+
+    .postbox {
+        margin-left: 1em;
+        width: 100%;
+    }
+
+    .purple-bg {
+        padding: 0;
+        text-align: center;
+    }
+
+    .purple-bg-text {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .purple-bg-text h2 {
+        font-size: 1.2em;
+        margin-bottom: 5%;
+    }
+
+    .purple-bg-text p {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .purple-bg form {
+        margin-bottom: 10%;
+        flex-direction: column;
+    }
+    
+    .purple-bg form input {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border: none;
+        width: 80%;
+    }
+    
+    .purple-bg form button {
+        width: 80%;
+        font-weight: 700;
+    }
+
+    .contato {
+        margin-left: -50%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato ul {
+        margin-bottom: 20%;
+    }
+    
+    .logo-white {
+        width: 250px;
+        margin-bottom: 15%;
+        margin-right: 50%;
+    }
+}
