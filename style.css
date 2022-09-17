@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*  font-family: 'Raleway', sans-serif;
+    font-family: 'Open sans', sans-serif;
+    
+    - Very Dark Blue: hsl(243, 87%, 12%)
+    - Desaturated Blue: hsl(238, 22%, 44%)
+
+### Accent
+
+    - Bright Blue: hsl(224, 93%, 58%)
+    - Moderate Cyan: hsl(170, 45%, 43%)
+
+### Neutral
+
+    - Light Grayish Blue: hsl(240, 75%, 98%)
+    - Light Gray: hsl(0, 0%, 75%) */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Raleway';
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+.container ul li a {
+    font-size: 1rem;
+}
+
+.first-flex {
+    margin-top: 5em;
+}
+
+.first-flex p {
+    font-size: 1.05rem;
+}
+
+.ilustracao-1 {
+    margin-top: 5em;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex > div {
+    flex: 1;
+}
+
+.flex > div:first-child {
+    margin-right: 1.5em;
+}
+
+.flex > div:last-child {
+    margin-left: 1.5em
+}
+
+.flex h1{
+    font-size: 2.3rem;
+    line-height: 1.5em;
+}
+
+/* Nav Style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 3em;
+}
+
+nav ul a {
+    font-family: 'Raleway', sans-serif;
+    color: hsl(243, 87%, 12%);
+    text-decoration: none;
+}
+
+/* Form Style */
+
+form {
+    display: flex;
+}
+
+input {
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 2px;
+    padding: 15px;
+    padding-bottom: 10px;
+    flex: 0.5;
+    margin-right: 1em;
+}
+
+button {
+    color: white;
+    background-color: hsl(224, 93%, 58%);
+    border-style: none;
+    border-radius: 4px;
+    padding: 15px;
+    flex: 0.3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: hsl(224, 93%, 73%);
+}
+
+
+/* Second Section Style*/
+.second-section {
+    gap: 50px;
+    background-color: hsl(240, 75%, 98.4%);
+    margin-top: 200px;
+    position: relative;
+}
+
+.second-section::before {
+    content: '';
+    background-image: url(/images/bg-curve-desktop.svg);
+    background-size: cover;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+}
+
+.second-section h2 {
+    font-weight: 700;
+    font-size: 2.1rem;
+}
+
+.second-section-text {
+    font-size: 0.9rem;
+    width: 85%;
+}
+
+.green-link {
+    font-size: 0.9rem;
+    color: hsl(170, 45%, 43%);
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    margin-right: 0.5em;
+}
+
+.green-link:hover {
+    color: hsl(170, 61%, 59%);
+}
+
+.postbox {
+    background-color: white;
+    width: 60%;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding: 25px 30px 30px 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.postbox p {
+    margin-top: 0.5em;
+    color: hsl(243, 87%, 12%);
+    letter-spacing: 1px;
+    line-height: 1.8em;
+    font-size: 0.7rem;
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.usuario img {
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin-right: 1em;
+}
+
+.usuario h4 {
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Third Section Style */
+
+.purple-bg {
+    background-color: hsl(238, 22%, 44%);
+    padding: 3em;
+}
+
+.purple-bg form {
+    flex-direction: column;
+    margin-top: 2em;
+    margin-left: 2.5em;
+}
+
+.purple-bg form input {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    width: 100%;
+}
+
+.purple-bg form button {
+    width: 35%;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.purple-bg-text {
+    color: white;
+}
+
+.purple-bg-text p {
+    font-size: 0.9em;
+}
+
+/* Footer Style */
+
+footer {
+    color: white;
+    background-color: hsl(243, 87%, 12%);
+    padding: 5em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    font-size: 1.5em;
+}
+
+.contato {
+    display: flex;
+    column-gap: 8em;
+    margin-left: -2em;
+}
+
+.mini-icon {
+    margin-right: 1em;
+}
+
+.media-icons {
+    display: flex;
+    flex-direction: row;
+}
